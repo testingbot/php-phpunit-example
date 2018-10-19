@@ -1,0 +1,14 @@
+{
+  "require": {
+    "phpunit/phpunit-selenium": "*",
+    "facebook/webdriver": "dev-master"
+  },
+  "scripts": {
+    "test": "composer single && composer local && composer parallel",
+    "single": "vendor/bin/phpunit tests/single_test.php",
+    "parallel": "CONFIG_FILE=config/parallel.conf.json /usr/bin/env php lib/parallel.php"
+  },
+  "autoload": {
+    "classmap": ["lib/"]
+  }
+}

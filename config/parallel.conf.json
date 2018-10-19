@@ -1,0 +1,16 @@
+{
+  "capabilities": {
+    "build": "phpunit-testingbot",
+    "name": "parallel_test"
+  },
+
+  "environments": [{
+    "browserName": "chrome",
+    "version": "latest",
+    "platform": "WIN10"
+  },{
+    "browserName": "firefox",
+    "version": "latest",
+    "platform": "WIN10"
+  }]
+}

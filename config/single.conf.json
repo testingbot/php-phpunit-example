@@ -1,0 +1,12 @@
+{
+  "capabilities": {
+    "build": "phpunit-testingbot",
+    "name": "single_test"
+  },
+
+  "environments": [{
+    "browserName": "chrome",
+    "version": "latest",
+    "platform": "WIN10"
+  }]
+}
