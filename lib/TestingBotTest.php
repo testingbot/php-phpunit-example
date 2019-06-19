@@ -20,7 +20,12 @@ class TestingBotTest extends PHPUnit\Framework\TestCase
                 $caps[$key] = $value;
         }
 
-        self::$driver = RemoteWebDriver::create($url, $caps);
+        self::$driver = RemoteWebDriver::create($url, $caps, 120000, 120000);
+    }
+
+    public static function tearDownAfterClass()
+    {
+        self::$driver->quit();
     }
 }
 ?>
