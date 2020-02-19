@@ -1,7 +1,7 @@
 {
   "require": {
     "phpunit/phpunit-selenium": "*",
-    "facebook/webdriver": "dev-master"
+    "php-webdriver/webdriver": "dev-master"
   },
   "scripts": {
     "test": "composer single && composer local && composer parallel",

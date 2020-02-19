@@ -1,5 +1,6 @@
 <?php
     require 'vendor/autoload.php';
+    use Facebook\WebDriver\WebDriverBy;
 
     class SingleTest extends TestingBotTest {
 
@@ -8,10 +9,7 @@
             $element = self::$driver->findElement(WebDriverBy::name("q"));
             $element->sendKeys("TestingBot");
             $element->submit();
-            self::$driver->wait(10, 500)->until(function($driver) {
-              $elements = $driver->findElements(WebDriverBy::id("resultStats"));
-              return count($elements) > 0;
-            });
+	    sleep(3);
             $this->assertEquals('TestingBot - Google Search', self::$driver->getTitle());
         }
 

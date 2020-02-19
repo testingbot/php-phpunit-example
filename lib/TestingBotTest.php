@@ -3,6 +3,8 @@
 require 'vendor/autoload.php';
 require 'lib/globals.php';
 
+use Facebook\WebDriver\Remote\RemoteWebDriver;
+
 class TestingBotTest extends PHPUnit\Framework\TestCase
 {
     protected static $driver;
